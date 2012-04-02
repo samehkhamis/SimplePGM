@@ -1,0 +1,33 @@
+SimplePGM
+Learning and inference methods for probabilistic graphical models in Matlab
+
+This is a reference implementation that I wrote for myself. It is not meant to be fast, but it is
+meant to be straightforward. Licensed under GPLv2 for non-commercial research purposes only.
+
+The current implemented algorithms are:
+
+Learning
+----------
+maxlikelihood: Maximum Likelihood (requires a lot of parameters, needs cleaning)
+contrastive: Contrastive Divergence
+perceptron: Structured Perceptron-Style
+cuttingplane: Cutting Plane for Structured SVM
+
+Inference
+----------
+Marginal
+==========
+lbp_sp: Sum Product Belief Propagation
+meanfield: Mean Field Approximation
+mcmc: Markov Chain Monte Carlo
+
+Decoding
+==========
+lbp_mp: Max Product Belief Propagation
+annealing: Simulated Annealing
+icm: Iterated Conditional Modes
+
+Other
+----------
+gibbs: Gibbs Sampler
+metropolis: Metropolis-Hastings Sampler
